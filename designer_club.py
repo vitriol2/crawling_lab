@@ -90,14 +90,14 @@ for paragraph in paragraphs:
         shop_info_list.append(shop_info)
 
 
-    floor_name = num_to_floor_name(floor_index)
-    f = open(f'designer_club/designer_club_shopList_floor_{floor_name}.csv', 'w', encoding='utf-8', newline='')
-    csvWriter = csv.writer(f)
-    for i in shop_info_list:
-        # i[0] = i[0].decode('utf-8')
-        csvWriter.writerow(i)
-
-    f.close()
+    # floor_name = num_to_floor_name(floor_index)
+    # f = open(f'designer_club/designer_club_shopList_floor_{floor_name}.csv', 'w', encoding='utf-8', newline='')
+    # csvWriter = csv.writer(f)
+    # for i in shop_info_list:
+    #     # i[0] = i[0].decode('utf-8')
+    #     csvWriter.writerow(i)
+    #
+    # f.close()
 
     floor_index += 1
     # print(f'shop_info_list: {shop_info_list}')
